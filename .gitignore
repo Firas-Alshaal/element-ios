@@ -1,5 +1,6 @@
 # Xcode
 #
+<<<<<<< HEAD
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## User settings
@@ -30,11 +31,34 @@ playground.xcworkspace
 # .swiftpm
 
 .build/
+=======
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+out/
+.vscode/
+vendor/
+.DS_Store
+>>>>>>> 27b484a (Initial commit before iOS push-to-talk work)
 
 # CocoaPods
 #
 # We recommend against adding the Pods directory to your .gitignore. However
 # you should judge for yourself, the pros and cons are mentioned at:
+<<<<<<< HEAD
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
 # Pods/
@@ -60,3 +84,27 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+=======
+# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
+#
+Pods/
+
+## Ignore project files as we generate them with xcodegen (https://github.com/yonaskolb/XcodeGen)
+# Plus ridiculous workaround to unignore the Package.resolved file for SwiftPM.
+*.xcodeproj
+*.xcworkspace/*
+!Riot.xcworkspace/xcshareddata
+Riot.xcworkspace/xcshareddata/*
+!Riot.xcworkspace/xcshareddata/swiftpm/
+Riot.xcworkspace/xcshareddata/swiftpm/*
+!Riot.xcworkspace/xcshareddata/swiftpm/Package.resolved
+
+# Fastlane
+fastlane/report.xml
+fastlane/Reports
+fastlane/README.md
+fastlane/Preview.html
+fastlane/metadata/
+
+provisioning_profiles/
+>>>>>>> 27b484a (Initial commit before iOS push-to-talk work)
